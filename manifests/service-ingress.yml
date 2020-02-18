@@ -8,9 +8,7 @@ spec:
     type: ClusterIP
     ports:
     - port: 80
-CMD
       targetPort: 80
-CMD
       protocol: TCP
       name: http
     selector:
