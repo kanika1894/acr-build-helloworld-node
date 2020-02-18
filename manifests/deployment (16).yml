@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: kpingress
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: kpingress
+    spec:
+      containers:
+        - name: kpingress
+          image: kapasrijkubacr.azurecr.io/kpingress
+          ports:
+          - containerPort: 80
