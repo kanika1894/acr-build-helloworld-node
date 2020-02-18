@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: kpnowwithingress
+    labels:
+        app: kpnowwithingress
+spec:
+    type: ClusterIP
+    ports:
+    - port: 80
+CMD
+      targetPort: 80
+CMD
+      protocol: TCP
+      name: http
+    selector:
+        app: kpnowwithingress
