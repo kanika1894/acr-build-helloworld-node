@@ -14,4 +14,3 @@ spec:
           image: kapasrijkubacr.azurecr.io/kpwithoutingress
           ports:
           - containerPort: 80
-CMD
