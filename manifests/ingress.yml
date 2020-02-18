@@ -15,4 +15,3 @@ spec:
               backend:
                 serviceName: kpnowwithingress
                 servicePort: 80
-CMD
